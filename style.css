@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 16px;
+}
+
+.app {
+  background: #2b2b3d;
+  width: 100%;
+  max-width: 420px;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+/* ===== Formulario ===== */
+.formulario {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.formulario input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #14141f;
+  color: #ffffff;
+}
+
+.formulario input:focus {
+  outline: 2px solid #f59e0b;
+}
+
+.formulario button {
+  padding: 12px 18px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #f59e0b;
+  color: #1e1e2e;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.formulario button:hover:not(:disabled) {
+  background: #fbbf24;
+}
+
+.formulario button:disabled,
+.formulario input:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* ===== Mensajes de estado ===== */
+.mensaje {
+  min-height: 24px;
+  margin-bottom: 12px;
+  font-weight: bold;
+  color: #9ca3af;
+}
+
+.mensaje.error {
+  color: #ef4444;
+}
+
+.mensaje.cargando {
+  color: #fbbf24;
+}
+
+/* ===== Tarjeta del clima ===== */
+.clima {
+  background: #14141f;
+  padding: 24px 16px;
+  border-radius: 12px;
+}
+
+.ubicacion {
+  color: #d1d5db;
+  font-size: 1.2rem;
+}
+
+.icono {
+  font-size: 4rem;
+  line-height: 1.3;
+}
+
+.temperatura {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.descripcion {
+  color: #9ca3af;
+  margin-bottom: 20px;
+}
+
+.detalles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.detalle {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background: #2b2b3d;
+  padding: 12px 6px;
+  border-radius: 8px;
+}
+
+.detalle-titulo {
+  color: #9ca3af;
+  font-size: 0.8rem;
+}
+
+.detalle-valor {
+  color: #f59e0b;
+  font-weight: bold;
+}
+
+/* Debe ir al final para ganarle a otras reglas */
+.oculto {
+  display: none;
+}
