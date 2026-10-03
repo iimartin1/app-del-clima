@@ -1,52 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>App del clima</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App del clima</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <main class="app">
-    <h1>App del clima</h1>
+    <main class="app">
+        <h1>App del clima</h1>
 
-    <form id="formulario" class="formulario">
-      <input
-        type="text"
-        id="ciudad"
-        placeholder="Escribe una ciudad..."
-        autocomplete="off"
-        maxlength="60"
-      >
-      <button type="submit" id="buscar">Buscar</button>
-    </form>
+        <form id="formulario" class="formulario">
+            <input type="text" id="ciudad" placeholder="Escribe una ciudad..." autocomplete="off" maxlength="60">
+            <button type="submit" id="buscar">Buscar</button>
+        </form>
 
-    <p id="mensaje" class="mensaje" aria-live="polite"></p>
+        <p id="mensaje" class="mensaje" aria-live="polite"></p>
 
-    <!-- Datos de ejemplo: JavaScript los reemplazará en el siguiente paso -->
-    <section id="clima" class="clima" aria-live="polite">
-      <p class="ubicacion" id="ubicacion">Lima, Perú</p>
-      <p class="icono" id="icono">⛅</p>
-      <p class="temperatura" id="temperatura">19°C</p>
-      <p class="descripcion" id="descripcion">Parcialmente nublado</p>
+        <!-- Datos de ejemplo: JavaScript los reemplazará en el siguiente paso -->
+        <section id="clima" class="clima" aria-live="polite">
+            <p class="ubicacion" id="ubicacion">Lima, Perú</p>
+            <p class="icono" id="icono">⛅</p>
+            <p class="temperatura" id="temperatura">19°C</p>
+            <p class="descripcion" id="descripcion">Parcialmente nublado</p>
 
-      <div class="detalles">
-        <div class="detalle">
-          <span class="detalle-titulo">Sensación</span>
-          <span class="detalle-valor" id="sensacion">18°C</span>
-        </div>
-        <div class="detalle">
-          <span class="detalle-titulo">Humedad</span>
-          <span class="detalle-valor" id="humedad">82%</span>
-        </div>
-        <div class="detalle">
-          <span class="detalle-titulo">Viento</span>
-          <span class="detalle-valor" id="viento">12 km/h</span>
-        </div>
-      </div>
-    </section>
-  </main>
+            <div class="detalles">
+                <div class="detalle">
+                    <span class="detalle-titulo">Sensación</span>
+                    <span class="detalle-valor" id="sensacion">18°C</span>
+                </div>
+                <div class="detalle">
+                    <span class="detalle-titulo">Humedad</span>
+                    <span class="detalle-valor" id="humedad">82%</span>
+                </div>
+                <div class="detalle">
+                    <span class="detalle-titulo">Viento</span>
+                    <span class="detalle-valor" id="viento">12 km/h</span>
+                </div>
+            </div>
+        </section>
+        <p class="creditos">
+            Datos de <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo.com</a>
+        </p>
+    </main>
 
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
